@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<!--[if lt ie 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if ie 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if ie 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt ie 8]><!-->
+<html class="no-js" lang="ru">
+<!--<![endif]-->
+		<head>
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+				<meta name="description" content="">
+		
+				<title>Page Title Here</title>
+		
+				<link href="css/grid.min.css" rel="stylesheet">
+				<link href="css/skin.min.css" rel="stylesheet">
+		
+				<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		
+				<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+		
+				<!--[if gt ie 8]><!-->
+				<script src="js/vendor/minify.min.js"></script>
+				<script src="js/vendor/jquery-2.1.0.min.js"></script>
+				<!--<![endif]-->
+		
+				<!--[if lt IE 9]>
+				<script src="js/html5shiv.js"></script>
+				<![endif]-->
+		</head>
+		
+		<body>
+			<div class="layout">
+				<div class="layout-overlay"></div>
+				<header class="header">
+						<div class="top-bar">
+							<div class="container">
+								<div class="u-clearfix">
+									<div class="u-pull-left top-bar__left">
+										<div class="nav-outer">
+											<button class="nav-toggle">
+												<span class="hamburger">
+													<i class="hamburger__dash"></i>
+													<i class="hamburger__dash"></i>
+													<i class="hamburger__dash"></i>
+												</span>
+												<span>Меню</span>
+											</button>
+				
+											<nav class="nav">
+												<ul class="u-clear-list">
+													<li class="nav__item">
+														<a href="#" class="nav__link">Доставка и оплата</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Услуги компании</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Прайс-листы</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Полезная информация</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Контакты</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+				
+									<div class="u-pull-right top-bar__right">
+										<div class="auth dialog-holder">
+											<div class="auth-controls">
+												<a href="#" data-target="sign-in">Вход</a>
+												<span>&nbsp;/&nbsp;</span>
+												<a href="#" data-target="sign-up">Регистрация</a>
+											</div>
+											<div data-id="sign-up" class="auth__dialog dialog">
+												<h5 class="md-title">Регистрация</h5>
+											
+												<form action="/" method="post" class="js-validate">
+													<div class="form-control-row">
+														<input type="email" placeholder="E-mail" name="email" class="form-control">
+													</div>
+													<div class="form-control-row">
+														<input type="text" placeholder="Телефон" name="phone" class="form-control">
+													</div>
+													<div class="form-control-row">
+														<input type="password" placeholder="Пароль" name="password" id="password" class="form-control">
+													</div>
+													<div class="form-control-row">
+														<input type="password" placeholder="Подтверждение пароля" name="confirm_password" class="form-control">
+													</div>
+											
+													<button class="btn btn--submit">Зарегистрироваться</button>
+												</form>
+											</div>
+											
+											<div data-id="sign-in" class="auth__dialog dialog">
+												<h5 class="md-title">Вход в личный кабинет</h5>
+											
+												<form action="/" method="post" class="js-validate">
+													<div class="form-control-row">
+														<input type="email" placeholder="E-mail" name="email" class="form-control">
+													</div>
+													<div class="form-control-row">
+														<input type="password" placeholder="Пароль" name="password" class="form-control">
+											
+														<div class="recovery-link">
+															<a href="#" data-target="password-recovery">Забыли пароль?</a>
+														</div>
+													</div>
+											
+													<button class="btn btn--submit btn--fixed">Войти</button>
+													<div class="spacer"></div>
+													<a href="#" data-target="sign-up" class="btn btn--o btn--fixed">Регистрация</a>
+												</form>
+											</div>
+											
+											<div data-id="registration-success" class="auth__dialog dialog">
+												<h5 class="md-title">Спасибо за регистрацию!</h5>
+												<p>Мы выслали вам на почту письмо с кодом подтверждения.</p>
+												<a href="#" data-target="sign-in" class="btn btn--submit">Войти</a>
+											</div>
+											
+											<div data-id="password-recovery" class="auth__dialog dialog">
+												<h5 class="md-title">Восстановление пароля</h5>
+											
+												<form action="/" method="post" class="js-validate">
+													<p>Если вы забыли пароль,<br>введите E-Mail.</p>
+													<p>Регистрационные данные, <br>будут высланы вам по E-Mail.</p>
+													<div class="form-control-row">
+														<input type="email" placeholder="E-mail" name="email" class="form-control">
+													</div>
+													<button class="btn btn--submit">Войти</button>
+												</form>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+						<div class="middle-bar">
+							<div class="container">
+								<div class="middle-bar__left">
+									<a href="#" class="logotype"></a>
+								</div>
+				
+								<div class="middle-bar__right">
+									<div class="u-pull-left middle-bar__cell u-none--t">
+										<div class="location-chooser dropdown">
+											<a href="#" class="iconed iconed--left location-chooser__current dropdown-toggle">
+												<span class="location">Санкт - Петербург</span>
+												<i class="icon icon--location"></i>
+											</a>
+				
+											<div class="location-chooser__dropdown dropdown-inner">
+												<ul class="u-clear-list">
+													<li><a href="#">Еще что-то</a></li>
+													<li><a href="#">И еще еще</a></li>
+													<li><a href="#">Москва</a></li>
+													<li><a href="#">Еще что-то</a></li>
+													<li><a href="#">И еще еще</a></li>
+												</ul>
+											</div>
+										</div>
+				
+										<div>
+											<a href="#" class="iconed iconed--left">
+												<span>Схема проезда</span>
+												<i class="icon icon--map"></i>
+											</a>
+										</div>
+									</div>
+				
+									<div class="u-pull-right middle-bar__cell">
+										<div class="header-contacts">
+											<span class="tiny">Время работы: ПН - ПТ с 9:00 до 17:30 (по Москве)</span>
+				
+											<div class="header-contacts__phone">8 800 333-36-30</div>
+				
+											<div class="dialog-holder">
+												<a href="#" data-target="application-form" class="iconed iconed--left">
+													<span>Отправить заявку по почте</span>
+													<i class="icon icon--mail"></i>
+												</a>
+												<div data-id="application-form" class="dialog">
+													<h5 class="md-title">Заявка</h5>
+												
+													<form action="/" method="post" class="js-validate">
+														<div class="row">
+															<div class="col x1d2 x1d1--m form-control-row">
+																<input type="text" placeholder="Имя" name="first_name" class="form-control">
+															</div>
+												
+															<div class="col x1d2 x1d1--m form-control-row">
+																<input type="text" placeholder="E-mail" name="email" class="form-control">
+															</div>
+												
+															<div class="col x1d1 form-control-row">
+																<textarea placeholder="Текст заявки" name="text" class="form-control"></textarea>
+															</div>
+												
+														</div>
+														<button class="btn btn--submit">Отправить</button>
+													</form>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+						<div class="bottom-bar">
+							<div class="bottom-bar__inner">
+								<div class="container">
+									<div class="bottom-bar__aligner">
+				
+										<div class="bottom-bar__cell">
+											<div class="categories">
+												<button class="categories__toggle dropdown-toggle">
+													<span class="hamburger hamburger--white">
+														<i class="hamburger__dash"></i>
+														<i class="hamburger__dash"></i>
+														<i class="hamburger__dash"></i>
+													</span>
+													<span>Каталог <span class="u-none--s">товаров</span></span>
+												</button>
+				
+												<div class="categories__dropdown dropdown">
+													<ul class="u-clear-list">
+														<li class="categories__item"><a href="#" class="categories__link">Анкера</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Болты</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Винты</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Гайки</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Гвозди</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Дюбеля</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Заклепки</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Кольца стопорные</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Подшипники</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Пробки резьбовые</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Саморезы</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Такелаж</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Шайбы</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Шпильки</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Шплинты</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Шпонки</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Штанги</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Штифты</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Шурупы</a></li>
+														<li class="categories__item"><a href="#" class="categories__link">Хомуты</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+				
+										<div class="bottom-bar__cell">
+											<form action="/" method="post" class="global-search">
+												<input type="text" placeholder="Поиск среди 24 784 товаров" class="form-control global-search__input">
+												<button class="global-search__submit">Найти</button>
+				
+												<a href="#" class="btn-square global-search__toggle">
+													<i class="icon icon--search"></i>
+												</a>
+											</form>
+										</div>
+				
+										<div class="bottom-bar__cell">
+											<div class="cart dropdown">
+												<a href="#" class="btn-square cart__toggle dropdown-toggle">
+													<span class="cart__summ">2 товара на 1625,6228 руб</span>
+												</a>
+				
+												<div class="cart__dropdown dropdown-hidden">
+													<div class="container cart-slider">
+														<table class="cart-inner">
+															<thead class="cart__header">
+																<tr>
+																	<td colspan="2">Наименование</td>
+																	<td>Цена за упаковку</td>
+																	<td>Кол-во упаковок</td>
+																	<td>Итого</td>
+																</tr>
+															</thead>
+				
+															<tbody class="cart-item">
+																<tr class="cart__row">
+																	<th colspan="5">DIN 931Болт с неполной резьбой</th>
+																</tr>
+				
+																<tr class="cart__row">
+																	<td class="cart__col cart-item__image">
+																		<img src="http://images.metalvis.ua/images/upload/anker_etkd.png" alt="" class="responsive">
+																	</td>
+				
+																	<td class="cart__col cart-item__specs">
+																		<dl class="dl">
+																			<dt>Количество в упаковке:</dt>
+																			<dd>1000 шт</dd>
+																			<dt>Диаметр:</dt>
+																			<dd>10 мм</dd>
+																			<dt>Длина:</dt>
+																			<dd>1 000 мм</dd>
+																			<dt>Материал:</dt>
+																			<dd>Латунь никелированная</dd>
+																			<dt>Покрытие:</dt>
+																			<dd>Горячий цинк</dd>
+																			<dt>Форма:</dt>
+																			<dd>Без фаски</dd>
+																		</dl>
+																	</td>
+				
+																	<td class="cart__col cart-item__price">
+																		<span>406.42 руб.</span>
+																	</td>
+				
+																	<td class="cart__col cart-item__qnty">
+																		<div class="item-counter">
+																			<a href="#" class="item-counter__btn item-counter__decrease">
+																				<i class="icon icon--minus"></i>
+																			</a>
+				
+																			<input value="1" type="text" class="item-counter__input form-control">
+				
+																			<a href="#" class="item-counter__btn item-counter__increase">
+																				<i class="icon icon--add"></i>
+																			</a>
+																		</div>
+																	</td>
+				
+																	<td class="cart__col cart-item__price">
+																		<span>812.84 руб.</span>
+				
+																		<a href="" class="btn-remove"><i class="icon icon--cancel"></i></a>
+																	</td>
+																</tr>
+															</tbody>
+				
+															<tbody class="cart-item">
+																<tr class="cart__row">
+																	<th colspan="5">DIN 931Болт с неполной резьбой</th>
+																</tr>
+				
+																<tr class="cart__row">
+																	<td class="cart__col cart-item__image">
+																		<img src="http://images.metalvis.ua/images/upload/anker_etkd.png" alt="" class="responsive">
+																	</td>
+				
+																	<td class="cart__col cart-item__specs">
+																		<dl class="dl">
+																			<dt>Количество в упаковке:</dt>
+																			<dd>1000 шт</dd>
+																			<dt>Диаметр:</dt>
+																			<dd>10 мм</dd>
+																			<dt>Длина:</dt>
+																			<dd>1 000 мм</dd>
+																			<dt>Материал:</dt>
+																			<dd>Латунь никелированная</dd>
+																			<dt>Покрытие:</dt>
+																			<dd>Горячий цинк</dd>
+																			<dt>Форма:</dt>
+																			<dd>Без фаски</dd>
+																		</dl>
+																	</td>
+				
+																	<td class="cart__col cart-item__price">
+																		<span>406.42 руб.</span>
+																	</td>
+				
+																	<td class="cart__col cart-item__qnty">
+																		<div class="item-counter">
+																			<a href="#" class="item-counter__btn item-counter__decrease">
+																				<i class="icon icon--minus"></i>
+																			</a>
+				
+																			<input value="1" type="text" class="item-counter__input form-control">
+				
+																			<a href="#" class="item-counter__btn item-counter__increase">
+																				<i class="icon icon--add"></i>
+																			</a>
+																		</div>
+																	</td>
+				
+																	<td class="cart__col cart-item__price">
+																		<span>812.84 руб.</span>
+				
+																		<a href="" class="btn-remove"><i class="icon icon--cancel"></i></a>
+																	</td>
+																</tr>
+															</tbody>
+				
+															<tfoot class="cart__footer">
+																<tr class="cart__row">
+																	<td colspan="5" class="cart__col">
+																		Сумма заказа:
+																		<span class="price-small">
+																			<span class="price-small__units">1625,68 руб.</span>
+																		</span>
+																		<a href="#" class="btn">Оформить</a>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</header>
+				
+				<div class="content">
+					<div class="container">
+						<ul class="crumbs">
+							<li class="crumbs__item">
+								<a href="#" class="crumbs__link"><i class="icon--home"></i></a>
+							</li>
+							<li class="crumbs__item">
+								<a href="#" class="crumbs__link">Каталог продукции</a>
+							</li>
+							<li class="crumbs__item">
+								<a href="#" class="crumbs__link">Болты</a>
+							</li>
+							<li class="crumbs__item is-active">
+								<a href="#" class="crumbs__link">DIN 931 10.9</a>
+							</li>
+						</ul>
+
+						<main>
+							<div class="product">
+								<div class="island">
+									<h1 class="product__title">Болт с шестигранной головкой неполная резьба 1/4 UNC x 3 1/2</h1>
+
+									<div class="row">
+										<div class="col x3d4 x1d1--t">
+											<div class="product-specs">
+												<div class="row">
+													<div class="col x1d4 x1d1--m">
+														<div class="product__image">
+															<img src="http://images.metalvis.ua/images/upload/anker_etkd.png" alt="" class="adaptive">
+														</div>
+
+														<div class="u-none--m">
+															Аналог:
+															<ul class="similar">
+																<li class="similar__item">ГОСТ 1491</li>
+																<li class="similar__item">ISO 1207</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="col x1d2 x2d3--m x1--s">
+														<div class="u-push-left">
+															<h4 class="md-title">Самая популярная позиция:</h4>
+															<dl class="dl">
+																<dt>Количество в упаковке:</dt>
+																<dd>1000 шт</dd>
+																<dt>Диаметр:</dt>
+																<dd>10 мм</dd>
+																<dt>Длина:</dt>
+																<dd>1 000 мм</dd>
+																<dt>Материал:</dt>
+																<dd>Латунь никелированная</dd>
+																<dt>Покрытие:</dt>
+																<dd>Горячий цинк</dd>
+																<dt>Форма:</dt>
+																<dd>Без фаски</dd>
+															</dl>
+														</div>
+													</div>
+
+													<div class="col x1d4 x1d3--m x1--s">
+														<h4 class="md-title">Цена:</h4>
+
+														<div class="price">
+															<span class="price__units">406.42 руб.</span>
+															за упаковку
+														</div>
+
+														<div class="u-offset-bottom-15">
+															<a href="#" class="btn btn--addtocart">Добавить</a>
+														</div>
+														<div class="u-align-center">
+															<a href="#callback-form" class="btn-mfp-dialog">Купить в один клик</a>
+
+															<form action="/" method="post" id="callback-form" class="popup-dialog mfp-hide js-validate">
+																<h5 class="md-title">Купить в один клик</h5>
+																<p>Перезвоним и уточним информацию по телефону</p>
+																<div class="form-control-row">
+																	<div class="col x1d2 x1d1--m form-control-row">
+																		<input type="text" placeholder="Имя" name="first_name" class="form-control">
+																	</div>
+
+																	<div class="col x1d2 x1d1--m form-control-row">
+																		<input type="text" placeholder="Телефон" name="phone" class="form-control">
+																	</div>
+
+																	<div class="form-control-row">
+																		<button class="btn btn--submit">Отправить</button>
+																	</div>
+
+																	<div class="tiny">Мы обязуемся использовать Ваши контактные данные только для обратной связи с Вами и не передавать их третьим лицам <br>(<a href="#">Политика Конфиденциальности</a>)</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="product-details is-opened">
+												<div class="product-details__header">
+													<a href="#" class="product-details__toggle">Настроить параметры изделия <span class="tiny">(Диаметр, длина, материал, покрытие, форма)</span></a>
+												</div>
+
+												<form action="/" method="post" class="product-details__hidden">
+													<div class="product-details__content">
+														<div class="row">
+															<div class="col x1d3 x1d2--s x1d1--xs">
+																<span>Диаметр:</span>
+																<select>
+																	<option>10мм</option>
+																	<option>15мм</option>
+																	<option>20мм</option>
+																	<option>25мм</option>
+																	<option>30мм</option>
+																	<option>10мм</option>
+																	<option>15мм</option>
+																	<option>20мм</option>
+																	<option>25мм</option>
+																	<option>30мм</option>
+																</select>
+															</div>
+															<div class="col x1d3 x1d2--s x1d1--xs">
+																<span>Материал:</span>
+																<select>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																</select>
+															</div>
+															<div class="col x1d3 x1d2--s x1d1--xs">
+																<span>Форма</span>
+																<select>
+																	<option>Без фаски</option>
+																	<option>С фаской</option>
+																	<option>Конусная</option>
+																	<option>Квадратная</option>
+																	<option>Овальная</option>
+																	<option>Шестиугольная</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																</select>
+															</div>
+															<div class="col x1d3 x1d2--s x1d1--xs">
+																<span>Длина:</span>
+																<select>
+																	<option>10мм</option>
+																	<option>15мм</option>
+																	<option>20мм</option>
+																	<option>25мм</option>
+																	<option>30мм</option>
+																	<option>10мм</option>
+																	<option>15мм</option>
+																	<option>20мм</option>
+																	<option>25мм</option>
+																	<option>30мм</option>
+																</select>
+															</div>
+															<div class="col x1d3 x1d2--s x1d1--xs">
+																<span>Покрытие:</span>
+																<select>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																	<option>Латунь никелевая</option>
+																	<option>Горячий цинк</option>
+																</select>
+															</div>
+														</div>
+													</div>
+
+													<div class="product-details__footer">
+														<div class="u-table">
+															<div class="u-cell">
+																<input type="reset" value="Сбросить параметры" class="btn-reset">
+															</div>
+															<div class="u-cell">
+																<span class="md-title md-title--inline">Цена:</span>
+																<div class="price-small">
+																	<span class="price-small__units">406.42 руб.</span>
+																	за упаковку
+																</div>
+																<button class="btn btn--addtocart">Добавить</button>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+
+											<div>Самый популярный в мире болт DIN 933 представляет собой цилиндрический стержень с шестигранной головкой. Стержень болта имеет полную резьбу. Изготавливаются данные болты из сталей различных классов прочности и могут иметь различные виды покрытий. Стандарт DIN 933 соответствует ГОСТ 7798, ГОСТ 7805, ISO 4017.</div>
+										</div>
+										<div class="col x1d4 x0d1--t">
+											<ul class="advantages">
+												<li class="advantages__item">
+													<div class="sprite-icon sprite-icon--thumbup"></div>
+													Высокий профессионализм<br>сотрудников компании
+												</li>
+
+												<li class="advantages__item">
+													<div class="sprite-icon sprite-icon--car"></div>
+													Бесплатная доставка<br>по Санкт-Петербургу <br>при заказе от 5000 рублей!
+												</li>
+
+												<li class="advantages__item">
+													<div class="sprite-icon sprite-icon--traiv"></div>
+													Постоянный контроль<br>качества поступающих на склад<br>крепежных изделий
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="island">
+									<div class="tabs">
+										<ul class="tabs-nav">
+											<li class="tabs-nav__item is-active"><a href="#tab-1" class="tabs-nav__link">Технические характеристики</a></li>
+											<li class="tabs-nav__item"><a href="#tab-2" class="tabs-nav__link">Способ использования</a></li>
+											<li class="tabs-nav__item"><a href="#tab-3" class="tabs-nav__link">Области применения</a></li>
+											<li class="tabs-nav__item"><a href="#tab-4" class="tabs-nav__link">Таблица размеров</a></li>
+										</ul>
+
+										<div class="panes">
+											<div id="tab-1" class="pane is-visible">
+												<a href="#" class="pane-toggle">Технические характеристики</a>
+
+												<div class="pane__inner">
+													<div class="row">
+														<div class="col x1d5 x1d4--t x1d3--m u-none--s">
+															<div class="u-bordered">
+																<img src="http://anker.svmspb.ru/media/stroy_catalog/product/images/336.d2d4645dbcdc.jpg" alt="" class="responsive">
+															</div>
+														</div>
+														<div class="col x4d5 x3d4--t x2d3--m x1d1--s">
+															<h3 class="md-title">Технические характеристики DIN 933</h3>
+															<p>Данный болт это отличный металлический крепеж, можно сказать, универсальный. Изготавливают из особо прочных металлов. Обычно применяют такие классы прочности, как 1.7709, 12,9, 10,9, 8.8, 5.6. Для производства болтов согласно ГОСТ используют стали марок А2, А5. Это нержавеющие стали, которые придают болту особую прочность и отличную антикоррозийную сопротивляемость.</p>
+															<p>Если данный болт предназначен для крепежа узлов и деталей, которые будут работать в агрессивных средах, что осуществляется дополнительная обработка. Крепежное изделие покрывают защитными материалами при помощи нанесения на поверхность тонкого слоя цинка гальваническим или горячим способом. Возможна никелировка болта в гальванических ваннах. Применяется оцинковка термодиффузионная, а также по заказам производится хроматирование гальваническим методом.</p>
+															<p>В особых случаях метизные предприятия страны выполняют заказы на изготовление болта DIN 933 из таких прочных и дорогих металлов, как медь, латунь, алюминий. Используется и высокопрочный пластик. Все болты данного типа имеют полную резьбу и могут использоваться с соответствующими гайками класса 6.</p>
+															<p>Болты DIN 933 6.8 класса прочности обладают пределом прочности, который равный воздействию силы 60 килограмм на один квадратный миллиметр. Или это равносильно 600 РН/мм². Предел текучести равный 480 Н/мм², что равносильно воздействию силы 48 килограмм на один квадратный миллиметр.</p>
+															<p>Болт din 933 Для монтажа различных конструкций, сборки готовых изделий применяются всевозможные крепежные детали, одной из которых является болт. Болты, являясь разновидностью метрического крепежа, имеют различный класс прочности. Этот параметр указывает, какое сопротивление оказывает деталь. Болт din 933 относится к высокопрочным болтам, так как его класс прочности соответствует 5.8-8.8, в зависимости от материала изготовления.</p>
+															<p>Данный болт это отличный металлический крепеж, можно сказать, универсальный. Изготавливают из особо прочных металлов. Обычно применяют такие классы прочности, как 1.7709, 12,9, 10,9, 8.8, 5.6. Для производства болтов согласно ГОСТ используют стали марок А2, А5. Это нержавеющие стали, которые придают болту особую прочность и отличную антикоррозийную сопротивляемость.</p>
+															<p>Если данный болт предназначен для крепежа узлов и деталей, которые будут работать в агрессивных средах, что осуществляется дополнительная обработка. Крепежное изделие покрывают защитными материалами при помощи нанесения на поверхность тонкого слоя цинка гальваническим или горячим способом. Возможна никелировка болта в гальванических ваннах. Применяется оцинковка термодиффузионная, а также по заказам производится хроматирование гальваническим методом.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div id="tab-2" class="pane">
+												<a href="#" class="pane-toggle">Способ использования</a>
+
+												<div class="pane__inner">
+													<div class="row">
+														<div class="col x1d5 x1d4--t x1d3--m u-none--s">
+															<div class="u-bordered">
+																<img src="http://anker.svmspb.ru/media/stroy_catalog/product/images/336.d2d4645dbcdc.jpg" alt="" class="responsive">
+															</div>
+														</div>
+														<div class="col x4d5 x3d4--t x2d3--m x1d1--s">
+															<h3 class="md-title">Технические характеристики DIN 933</h3>
+															<p>Данный болт это отличный металлический крепеж, можно сказать, универсальный. Изготавливают из особо прочных металлов. Обычно применяют такие классы прочности, как 1.7709, 12,9, 10,9, 8.8, 5.6. Для производства болтов согласно ГОСТ используют стали марок А2, А5. Это нержавеющие стали, которые придают болту особую прочность и отличную антикоррозийную сопротивляемость.</p>
+															<p>Если данный болт предназначен для крепежа узлов и деталей, которые будут работать в агрессивных средах, что осуществляется дополнительная обработка. Крепежное изделие покрывают защитными материалами при помощи нанесения на поверхность тонкого слоя цинка гальваническим или горячим способом. Возможна никелировка болта в гальванических ваннах. Применяется оцинковка термодиффузионная, а также по заказам производится хроматирование гальваническим методом.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div id="tab-3" class="pane">
+												<a href="#" class="pane-toggle">Области применения</a>
+
+												<div class="pane__inner">
+													<div class="row">
+														<div class="col x1d1">
+															<h3 class="md-title">Технические характеристики DIN 933</h3>
+															<p>Данный болт это отличный металлический крепеж, можно сказать, универсальный. Изготавливают из особо прочных металлов. Обычно применяют такие классы прочности, как 1.7709, 12,9, 10,9, 8.8, 5.6. Для производства болтов согласно ГОСТ используют стали марок А2, А5. Это нержавеющие стали, которые придают болту особую прочность и отличную антикоррозийную сопротивляемость.</p>
+															<p>Если данный болт предназначен для крепежа узлов и деталей, которые будут работать в агрессивных средах, что осуществляется дополнительная обработка. Крепежное изделие покрывают защитными материалами при помощи нанесения на поверхность тонкого слоя цинка гальваническим или горячим способом. Возможна никелировка болта в гальванических ваннах. Применяется оцинковка термодиффузионная, а также по заказам производится хроматирование гальваническим методом.</p>
+															<p>В особых случаях метизные предприятия страны выполняют заказы на изготовление болта DIN 933 из таких прочных и дорогих металлов, как медь, латунь, алюминий. Используется и высокопрочный пластик. Все болты данного типа имеют полную резьбу и могут использоваться с соответствующими гайками класса 6.</p>
+															<p>Болты DIN 933 6.8 класса прочности обладают пределом прочности, который равный воздействию силы 60 килограмм на один квадратный миллиметр. Или это равносильно 600 РН/мм². Предел текучести равный 480 Н/мм², что равносильно воздействию силы 48 килограмм на один квадратный миллиметр.</p>
+															<p>Болт din 933 Для монтажа различных конструкций, сборки готовых изделий применяются всевозможные крепежные детали, одной из которых является болт. Болты, являясь разновидностью метрического крепежа, имеют различный класс прочности. Этот параметр указывает, какое сопротивление оказывает деталь. Болт din 933 относится к высокопрочным болтам, так как его класс прочности соответствует 5.8-8.8, в зависимости от материала изготовления.</p>
+															<p>Данный болт это отличный металлический крепеж, можно сказать, универсальный. Изготавливают из особо прочных металлов. Обычно применяют такие классы прочности, как 1.7709, 12,9, 10,9, 8.8, 5.6. Для производства болтов согласно ГОСТ используют стали марок А2, А5. Это нержавеющие стали, которые придают болту особую прочность и отличную антикоррозийную сопротивляемость.</p>
+															<p>Если данный болт предназначен для крепежа узлов и деталей, которые будут работать в агрессивных средах, что осуществляется дополнительная обработка. Крепежное изделие покрывают защитными материалами при помощи нанесения на поверхность тонкого слоя цинка гальваническим или горячим способом. Возможна никелировка болта в гальванических ваннах. Применяется оцинковка термодиффузионная, а также по заказам производится хроматирование гальваническим методом.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div id="tab-4" class="pane">
+												<a href="#" class="pane-toggle">Таблица размеров</a>
+
+												<div class="pane__inner">
+													<div class="row">
+														<div class="col x1d5 u-none--t">
+															<div class="u-bordered">
+																<img src="http://anker.svmspb.ru/media/stroy_catalog/product/images/336.d2d4645dbcdc.jpg" alt="" class="responsive">
+															</div>
+														</div>
+														<div class="col x4d5 x1d1--t">
+															<div class="table-scroller">
+																<table class="table">
+																	<thead>
+																		<tr>
+																			<td>Материал</td>
+																			<td>Тип покрытия</td>
+																			<td>Диаметр</td>
+																			<td>Длина</td>
+																			<td>Количество в упаковке</td>
+																			<td>Цена</td>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>Сталь</td>
+																			<td>Жёлтый цинк</td>
+																			<td>6.00мм</td>
+																			<td>4.00мм</td>
+																			<td>50шт/уп</td>
+																			<td>100500 рупий/шт</td>
+																		</tr>
+																		<tr>
+																			<td>Сталь</td>
+																			<td>Жёлтый цинк</td>
+																			<td>6.00мм</td>
+																			<td>4.00мм</td>
+																			<td>50шт/уп</td>
+																			<td>100500 рупий/шт</td>
+																		</tr>
+																		<tr>
+																			<td>Сталь</td>
+																			<td>Жёлтый цинк</td>
+																			<td>6.00мм</td>
+																			<td>4.00мм</td>
+																			<td>50шт/уп</td>
+																			<td>100500 рупий/шт</td>
+																		</tr>
+																		<tr>
+																			<td>Сталь</td>
+																			<td>Жёлтый цинк</td>
+																			<td>6.00мм</td>
+																			<td>4.00мм</td>
+																			<td>50шт/уп</td>
+																			<td>100500 рупий/шт</td>
+																		</tr>
+																		<tr>
+																			<td>Сталь</td>
+																			<td>Жёлтый цинк</td>
+																			<td>6.00мм</td>
+																			<td>4.00мм</td>
+																			<td>50шт/уп</td>
+																			<td>100500 рупий/шт</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</main>
+					</div>
+				</div>
+
+				<footer class="footer">
+
+					<div class="container">
+
+						<ul class="social">
+
+							<li class="social__item">
+
+								<a href="#" class="social__link">
+
+									<i class="icon icon--vk"></i>
+
+								</a>
+
+							</li>
+
+							<li class="social__item">
+
+								<a href="#" class="social__link">
+
+									<i class="icon icon--facebook"></i>
+
+								</a>
+
+							</li>
+
+							<li class="social__item">
+
+								<a href="#" class="social__link">
+
+									<i class="icon icon--twitter"></i>
+
+								</a>
+
+							</li>
+
+						</ul>
+
+				
+
+						<div class="row">
+
+							<div class="col x2d3 x1d1--t">
+
+								<div class="f-categories">
+
+									<ul class="f-categories__col">
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Анкера</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Болты</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Винты</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Гайки</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Гвозди</a></li>
+
+									</ul>
+
+									<ul class="f-categories__col">
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Саморезы</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Такелаж</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Шайбы</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Шпильки</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Шплинты</a></li>
+
+									</ul>
+
+									<ul class="f-categories__col">
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Шпонки</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Штанги</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Штифты</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Шурупы</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Хомуты</a></li>
+
+									</ul>
+
+									<ul class="f-categories__col">
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Дюбеля</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Заклепки</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Кольца стопорные</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Подшипники</a></li>
+
+										<li class="f-categories__item"><a href="#" class="f-categories__link">Пробки резьбовые</a></li>
+
+									</ul>
+
+								</div>
+
+				
+
+								<div class="credits">
+
+									<p>Данные на сайте представлены для ознакомления и публичной офертой не являются. Уточняйте текущие цены на крепеж и оборудование у специалистов нашей компании.</p>
+
+									<p>"Трайв-Комплект" оптовый склад высококачественного крепежа из Европы продает высокопрочный крепеж, дюймовый крепеж, горячеоцинкованный крепеж, полиамидный крепеж, антивандальный крепеж, нержавеющий крепеж, дюймовый крепеж с резьбой UNC и UNF, перфорированный крепеж, латунный крепеж, мебельный крепеж, монтажный крепеж и быстросъемные крепежные изделия.</p>
+
+								</div>
+
+							</div>
+
+				
+
+							<div class="col x1d3 u-align-right u-none--t">
+
+								<h4 class="sm-title sm-title--white">Контактная информация</h4>
+
+				
+
+								<ul class="contacts">
+
+									<li class="contacts__item">
+
+										<h5 class="contacts__title">Санкт-Петербург:</h5>
+
+										<span>+7 (812) 313-22-80</span>
+
+										<span>+7 (812) 931-79-32</span>
+
+										<span><a href="#">info@traiv-komplekt.ru</a></span>
+
+										<span>Санкт-Петербург, Кудрово, Центральная 41</span>
+
+									</li>
+
+									<li class="contacts__item">
+
+										<h5 class="contacts__title">Москва:</h5>
+
+										<span>+7 (495) 374-82-70</span>
+
+									</li>
+
+									<li class="contacts__item">
+
+										<h5 class="contacts__title">Екатеринбург:</h5>
+
+										<span>+7 (343) 288-79-40</span>
+
+									</li>
+
+									<li class="contacts__item">
+
+										<h5 class="contacts__title">Поставки по России:</h5>
+
+										<span>8-800-333-36-30 (беспл. звонок)</span>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</footer>
+
+				
+			</div>
+			<script src="js/script.js"></script>
+			<script src="js/plugins/jquery.modal.min.js"></script>
+			<script src="js/plugins/jquery.customselect.min.js"></script>
+			<script src="js/plugins/jquery.carousel.min.js"></script>
+			<script src="js/plugins/jquery.maskedinput.min.js"></script>
+			<script src="js/plugins/jquery.validate.min.js"></script>
+			<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			
+		</body>
+</html>

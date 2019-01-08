@@ -1,0 +1,719 @@
+/* -----------------------------------------------------
+	include 'calc' function and config
+*/
+/* -----------------------------------------------------
+	CONFIG
+*/
+/*-------------------------------------------------------
+	Color Properties
+*/
+/*-------------------------------------------------------
+	Background and Border Properties
+*/
+/*-------------------------------------------------------
+	Basic Box Properties
+*/
+/*-------------------------------------------------------
+	Flexible Box Layout
+*/
+/*-------------------------------------------------------
+	Text Properties
+*/
+/*-------------------------------------------------------
+	Text Decoration Properties
+*/
+/*-------------------------------------------------------
+	Animation Properties
+*/
+/*-------------------------------------------------------
+	Transform Properties
+*/
+/*-------------------------------------------------------
+	Transitions Properties
+*/
+/*-------------------------------------------------------
+	Basic User Interface Properties
+*/
+/*-------------------------------------------------------
+	Multi-column Layout Properties
+*/
+/*-------------------------------------------------------
+	Filter Effects Properties
+*/
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.row {
+  display: block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -5px;
+  margin-left: -5px;
+  list-style: none; }
+
+.col,
+.c-col {
+  display: inline-block;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top; }
+
+.c-col {
+  padding-right: 0;
+  padding-left: 0; }
+
+.lt-ie9 .col,
+.lt-ie9 .c-col {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0; }
+
+/* -----------------------------------------------------
+	grid calc
+*/
+.x1d1 {
+  width: 100%; }
+
+.x0d1 {
+  width: 0%; }
+
+.x1d2, .x2d4, .x3d6, .x4d8, .x5d10, .x6d12 {
+  width: 50%; }
+
+.x1d3, .x2d6, .x3d9, .x4d12 {
+  width: 33.33333%; }
+
+.x2d3, .x4d6, .x6d9, .x8d12 {
+  width: 66.66667%; }
+
+.x1d4, .x2d8, .x3d12 {
+  width: 25%; }
+
+.x3d4, .x6d8, .x9d12 {
+  width: 75%; }
+
+.x1d5, .x2d10 {
+  width: 20%; }
+
+.x2d5, .x4d10 {
+  width: 40%; }
+
+.x3d5, .x6d10 {
+  width: 60%; }
+
+.x4d5, .x8d10 {
+  width: 80%; }
+
+.x1d6, .x2d12 {
+  width: 16.66667%; }
+
+.x5d6, .x10d12 {
+  width: 83.33333%; }
+
+.x1d7 {
+  width: 14.28571%; }
+
+.x2d7 {
+  width: 28.57143%; }
+
+.x3d7 {
+  width: 42.85714%; }
+
+.x4d7 {
+  width: 57.14286%; }
+
+.x5d7 {
+  width: 71.42857%; }
+
+.x6d7 {
+  width: 85.71429%; }
+
+.x1d8 {
+  width: 12.5%; }
+
+.x3d8 {
+  width: 37.5%; }
+
+.x5d8 {
+  width: 62.5%; }
+
+.x7d8 {
+  width: 87.5%; }
+
+.x1d9 {
+  width: 11.11111%; }
+
+.x2d9 {
+  width: 22.22222%; }
+
+.x4d9 {
+  width: 44.44444%; }
+
+.x5d9 {
+  width: 55.55556%; }
+
+.x7d9 {
+  width: 77.77778%; }
+
+.x8d9 {
+  width: 88.88889%; }
+
+.x1d10 {
+  width: 10%; }
+
+.x3d10 {
+  width: 30%; }
+
+.x7d10 {
+  width: 70%; }
+
+.x9d10 {
+  width: 90%; }
+
+.x1d11 {
+  width: 9.09091%; }
+
+.x2d11 {
+  width: 18.18182%; }
+
+.x3d11 {
+  width: 27.27273%; }
+
+.x4d11 {
+  width: 36.36364%; }
+
+.x5d11 {
+  width: 45.45455%; }
+
+.x6d11 {
+  width: 54.54545%; }
+
+.x7d11 {
+  width: 63.63636%; }
+
+.x8d11 {
+  width: 72.72727%; }
+
+.x9d11 {
+  width: 81.81818%; }
+
+.x10d11 {
+  width: 90.90909%; }
+
+.x1d12 {
+  width: 8.33333%; }
+
+.x5d12 {
+  width: 41.66667%; }
+
+.x7d12 {
+  width: 58.33333%; }
+
+.x11d12 {
+  width: 91.66667%; }
+
+/* -----------------------------------------------------
+	MEDIA queries
+*/
+@media (max-width: 1200px) {
+  .x1--md {
+    width: 100%; }
+  .x1d1--md {
+    width: 100%; }
+  .x0d1--md {
+    width: 0%; }
+  .x1d2--md, .x2d4--md, .x3d6--md, .x4d8--md, .x5d10--md, .x6d12--md {
+    width: 50%; }
+  .x1d3--md, .x2d6--md, .x3d9--md, .x4d12--md {
+    width: 33.33333%; }
+  .x2d3--md, .x4d6--md, .x6d9--md, .x8d12--md {
+    width: 66.66667%; }
+  .x1d4--md, .x2d8--md, .x3d12--md {
+    width: 25%; }
+  .x3d4--md, .x6d8--md, .x9d12--md {
+    width: 75%; }
+  .x1d5--md, .x2d10--md {
+    width: 20%; }
+  .x2d5--md, .x4d10--md {
+    width: 40%; }
+  .x3d5--md, .x6d10--md {
+    width: 60%; }
+  .x4d5--md, .x8d10--md {
+    width: 80%; }
+  .x1d6--md, .x2d12--md {
+    width: 16.66667%; }
+  .x5d6--md, .x10d12--md {
+    width: 83.33333%; }
+  .x1d7--md {
+    width: 14.28571%; }
+  .x2d7--md {
+    width: 28.57143%; }
+  .x3d7--md {
+    width: 42.85714%; }
+  .x4d7--md {
+    width: 57.14286%; }
+  .x5d7--md {
+    width: 71.42857%; }
+  .x6d7--md {
+    width: 85.71429%; }
+  .x1d8--md {
+    width: 12.5%; }
+  .x3d8--md {
+    width: 37.5%; }
+  .x5d8--md {
+    width: 62.5%; }
+  .x7d8--md {
+    width: 87.5%; }
+  .x1d9--md {
+    width: 11.11111%; }
+  .x2d9--md {
+    width: 22.22222%; }
+  .x4d9--md {
+    width: 44.44444%; }
+  .x5d9--md {
+    width: 55.55556%; }
+  .x7d9--md {
+    width: 77.77778%; }
+  .x8d9--md {
+    width: 88.88889%; }
+  .x1d10--md {
+    width: 10%; }
+  .x3d10--md {
+    width: 30%; }
+  .x7d10--md {
+    width: 70%; }
+  .x9d10--md {
+    width: 90%; }
+  .x1d11--md {
+    width: 9.09091%; }
+  .x2d11--md {
+    width: 18.18182%; }
+  .x3d11--md {
+    width: 27.27273%; }
+  .x4d11--md {
+    width: 36.36364%; }
+  .x5d11--md {
+    width: 45.45455%; }
+  .x6d11--md {
+    width: 54.54545%; }
+  .x7d11--md {
+    width: 63.63636%; }
+  .x8d11--md {
+    width: 72.72727%; }
+  .x9d11--md {
+    width: 81.81818%; }
+  .x10d11--md {
+    width: 90.90909%; }
+  .x1d12--md {
+    width: 8.33333%; }
+  .x5d12--md {
+    width: 41.66667%; }
+  .x7d12--md {
+    width: 58.33333%; }
+  .x11d12--md {
+    width: 91.66667%; } }
+
+@media (max-width: 1024px) {
+  .x1--t {
+    width: 100%; }
+  .x1d1--t {
+    width: 100%; }
+  .x0d1--t {
+    width: 0%; }
+  .x1d2--t, .x2d4--t, .x3d6--t, .x4d8--t, .x5d10--t, .x6d12--t {
+    width: 50%; }
+  .x1d3--t, .x2d6--t, .x3d9--t, .x4d12--t {
+    width: 33.33333%; }
+  .x2d3--t, .x4d6--t, .x6d9--t, .x8d12--t {
+    width: 66.66667%; }
+  .x1d4--t, .x2d8--t, .x3d12--t {
+    width: 25%; }
+  .x3d4--t, .x6d8--t, .x9d12--t {
+    width: 75%; }
+  .x1d5--t, .x2d10--t {
+    width: 20%; }
+  .x2d5--t, .x4d10--t {
+    width: 40%; }
+  .x3d5--t, .x6d10--t {
+    width: 60%; }
+  .x4d5--t, .x8d10--t {
+    width: 80%; }
+  .x1d6--t, .x2d12--t {
+    width: 16.66667%; }
+  .x5d6--t, .x10d12--t {
+    width: 83.33333%; }
+  .x1d7--t {
+    width: 14.28571%; }
+  .x2d7--t {
+    width: 28.57143%; }
+  .x3d7--t {
+    width: 42.85714%; }
+  .x4d7--t {
+    width: 57.14286%; }
+  .x5d7--t {
+    width: 71.42857%; }
+  .x6d7--t {
+    width: 85.71429%; }
+  .x1d8--t {
+    width: 12.5%; }
+  .x3d8--t {
+    width: 37.5%; }
+  .x5d8--t {
+    width: 62.5%; }
+  .x7d8--t {
+    width: 87.5%; }
+  .x1d9--t {
+    width: 11.11111%; }
+  .x2d9--t {
+    width: 22.22222%; }
+  .x4d9--t {
+    width: 44.44444%; }
+  .x5d9--t {
+    width: 55.55556%; }
+  .x7d9--t {
+    width: 77.77778%; }
+  .x8d9--t {
+    width: 88.88889%; }
+  .x1d10--t {
+    width: 10%; }
+  .x3d10--t {
+    width: 30%; }
+  .x7d10--t {
+    width: 70%; }
+  .x9d10--t {
+    width: 90%; }
+  .x1d11--t {
+    width: 9.09091%; }
+  .x2d11--t {
+    width: 18.18182%; }
+  .x3d11--t {
+    width: 27.27273%; }
+  .x4d11--t {
+    width: 36.36364%; }
+  .x5d11--t {
+    width: 45.45455%; }
+  .x6d11--t {
+    width: 54.54545%; }
+  .x7d11--t {
+    width: 63.63636%; }
+  .x8d11--t {
+    width: 72.72727%; }
+  .x9d11--t {
+    width: 81.81818%; }
+  .x10d11--t {
+    width: 90.90909%; }
+  .x1d12--t {
+    width: 8.33333%; }
+  .x5d12--t {
+    width: 41.66667%; }
+  .x7d12--t {
+    width: 58.33333%; }
+  .x11d12--t {
+    width: 91.66667%; } }
+
+@media (max-width: 768px) {
+  .x1--m {
+    width: 100%; }
+  .x1d1--m {
+    width: 100%; }
+  .x0d1--m {
+    width: 0%; }
+  .x1d2--m, .x2d4--m, .x3d6--m, .x4d8--m, .x5d10--m, .x6d12--m {
+    width: 50%; }
+  .x1d3--m, .x2d6--m, .x3d9--m, .x4d12--m {
+    width: 33.33333%; }
+  .x2d3--m, .x4d6--m, .x6d9--m, .x8d12--m {
+    width: 66.66667%; }
+  .x1d4--m, .x2d8--m, .x3d12--m {
+    width: 25%; }
+  .x3d4--m, .x6d8--m, .x9d12--m {
+    width: 75%; }
+  .x1d5--m, .x2d10--m {
+    width: 20%; }
+  .x2d5--m, .x4d10--m {
+    width: 40%; }
+  .x3d5--m, .x6d10--m {
+    width: 60%; }
+  .x4d5--m, .x8d10--m {
+    width: 80%; }
+  .x1d6--m, .x2d12--m {
+    width: 16.66667%; }
+  .x5d6--m, .x10d12--m {
+    width: 83.33333%; }
+  .x1d7--m {
+    width: 14.28571%; }
+  .x2d7--m {
+    width: 28.57143%; }
+  .x3d7--m {
+    width: 42.85714%; }
+  .x4d7--m {
+    width: 57.14286%; }
+  .x5d7--m {
+    width: 71.42857%; }
+  .x6d7--m {
+    width: 85.71429%; }
+  .x1d8--m {
+    width: 12.5%; }
+  .x3d8--m {
+    width: 37.5%; }
+  .x5d8--m {
+    width: 62.5%; }
+  .x7d8--m {
+    width: 87.5%; }
+  .x1d9--m {
+    width: 11.11111%; }
+  .x2d9--m {
+    width: 22.22222%; }
+  .x4d9--m {
+    width: 44.44444%; }
+  .x5d9--m {
+    width: 55.55556%; }
+  .x7d9--m {
+    width: 77.77778%; }
+  .x8d9--m {
+    width: 88.88889%; }
+  .x1d10--m {
+    width: 10%; }
+  .x3d10--m {
+    width: 30%; }
+  .x7d10--m {
+    width: 70%; }
+  .x9d10--m {
+    width: 90%; }
+  .x1d11--m {
+    width: 9.09091%; }
+  .x2d11--m {
+    width: 18.18182%; }
+  .x3d11--m {
+    width: 27.27273%; }
+  .x4d11--m {
+    width: 36.36364%; }
+  .x5d11--m {
+    width: 45.45455%; }
+  .x6d11--m {
+    width: 54.54545%; }
+  .x7d11--m {
+    width: 63.63636%; }
+  .x8d11--m {
+    width: 72.72727%; }
+  .x9d11--m {
+    width: 81.81818%; }
+  .x10d11--m {
+    width: 90.90909%; }
+  .x1d12--m {
+    width: 8.33333%; }
+  .x5d12--m {
+    width: 41.66667%; }
+  .x7d12--m {
+    width: 58.33333%; }
+  .x11d12--m {
+    width: 91.66667%; } }
+
+@media (max-width: 640px) {
+  .x1--s {
+    width: 100%; }
+  .x1d1--s {
+    width: 100%; }
+  .x0d1--s {
+    width: 0%; }
+  .x1d2--s, .x2d4--s, .x3d6--s, .x4d8--s, .x5d10--s, .x6d12--s {
+    width: 50%; }
+  .x1d3--s, .x2d6--s, .x3d9--s, .x4d12--s {
+    width: 33.33333%; }
+  .x2d3--s, .x4d6--s, .x6d9--s, .x8d12--s {
+    width: 66.66667%; }
+  .x1d4--s, .x2d8--s, .x3d12--s {
+    width: 25%; }
+  .x3d4--s, .x6d8--s, .x9d12--s {
+    width: 75%; }
+  .x1d5--s, .x2d10--s {
+    width: 20%; }
+  .x2d5--s, .x4d10--s {
+    width: 40%; }
+  .x3d5--s, .x6d10--s {
+    width: 60%; }
+  .x4d5--s, .x8d10--s {
+    width: 80%; }
+  .x1d6--s, .x2d12--s {
+    width: 16.66667%; }
+  .x5d6--s, .x10d12--s {
+    width: 83.33333%; }
+  .x1d7--s {
+    width: 14.28571%; }
+  .x2d7--s {
+    width: 28.57143%; }
+  .x3d7--s {
+    width: 42.85714%; }
+  .x4d7--s {
+    width: 57.14286%; }
+  .x5d7--s {
+    width: 71.42857%; }
+  .x6d7--s {
+    width: 85.71429%; }
+  .x1d8--s {
+    width: 12.5%; }
+  .x3d8--s {
+    width: 37.5%; }
+  .x5d8--s {
+    width: 62.5%; }
+  .x7d8--s {
+    width: 87.5%; }
+  .x1d9--s {
+    width: 11.11111%; }
+  .x2d9--s {
+    width: 22.22222%; }
+  .x4d9--s {
+    width: 44.44444%; }
+  .x5d9--s {
+    width: 55.55556%; }
+  .x7d9--s {
+    width: 77.77778%; }
+  .x8d9--s {
+    width: 88.88889%; }
+  .x1d10--s {
+    width: 10%; }
+  .x3d10--s {
+    width: 30%; }
+  .x7d10--s {
+    width: 70%; }
+  .x9d10--s {
+    width: 90%; }
+  .x1d11--s {
+    width: 9.09091%; }
+  .x2d11--s {
+    width: 18.18182%; }
+  .x3d11--s {
+    width: 27.27273%; }
+  .x4d11--s {
+    width: 36.36364%; }
+  .x5d11--s {
+    width: 45.45455%; }
+  .x6d11--s {
+    width: 54.54545%; }
+  .x7d11--s {
+    width: 63.63636%; }
+  .x8d11--s {
+    width: 72.72727%; }
+  .x9d11--s {
+    width: 81.81818%; }
+  .x10d11--s {
+    width: 90.90909%; }
+  .x1d12--s {
+    width: 8.33333%; }
+  .x5d12--s {
+    width: 41.66667%; }
+  .x7d12--s {
+    width: 58.33333%; }
+  .x11d12--s {
+    width: 91.66667%; } }
+
+@media (max-width: 480px) {
+  .x1--xs {
+    width: 100%; }
+  .x1d1--xs {
+    width: 100%; }
+  .x0d1--xs {
+    width: 0%; }
+  .x1d2--xs, .x2d4--xs, .x3d6--xs, .x4d8--xs, .x5d10--xs, .x6d12--xs {
+    width: 50%; }
+  .x1d3--xs, .x2d6--xs, .x3d9--xs, .x4d12--xs {
+    width: 33.33333%; }
+  .x2d3--xs, .x4d6--xs, .x6d9--xs, .x8d12--xs {
+    width: 66.66667%; }
+  .x1d4--xs, .x2d8--xs, .x3d12--xs {
+    width: 25%; }
+  .x3d4--xs, .x6d8--xs, .x9d12--xs {
+    width: 75%; }
+  .x1d5--xs, .x2d10--xs {
+    width: 20%; }
+  .x2d5--xs, .x4d10--xs {
+    width: 40%; }
+  .x3d5--xs, .x6d10--xs {
+    width: 60%; }
+  .x4d5--xs, .x8d10--xs {
+    width: 80%; }
+  .x1d6--xs, .x2d12--xs {
+    width: 16.66667%; }
+  .x5d6--xs, .x10d12--xs {
+    width: 83.33333%; }
+  .x1d7--xs {
+    width: 14.28571%; }
+  .x2d7--xs {
+    width: 28.57143%; }
+  .x3d7--xs {
+    width: 42.85714%; }
+  .x4d7--xs {
+    width: 57.14286%; }
+  .x5d7--xs {
+    width: 71.42857%; }
+  .x6d7--xs {
+    width: 85.71429%; }
+  .x1d8--xs {
+    width: 12.5%; }
+  .x3d8--xs {
+    width: 37.5%; }
+  .x5d8--xs {
+    width: 62.5%; }
+  .x7d8--xs {
+    width: 87.5%; }
+  .x1d9--xs {
+    width: 11.11111%; }
+  .x2d9--xs {
+    width: 22.22222%; }
+  .x4d9--xs {
+    width: 44.44444%; }
+  .x5d9--xs {
+    width: 55.55556%; }
+  .x7d9--xs {
+    width: 77.77778%; }
+  .x8d9--xs {
+    width: 88.88889%; }
+  .x1d10--xs {
+    width: 10%; }
+  .x3d10--xs {
+    width: 30%; }
+  .x7d10--xs {
+    width: 70%; }
+  .x9d10--xs {
+    width: 90%; }
+  .x1d11--xs {
+    width: 9.09091%; }
+  .x2d11--xs {
+    width: 18.18182%; }
+  .x3d11--xs {
+    width: 27.27273%; }
+  .x4d11--xs {
+    width: 36.36364%; }
+  .x5d11--xs {
+    width: 45.45455%; }
+  .x6d11--xs {
+    width: 54.54545%; }
+  .x7d11--xs {
+    width: 63.63636%; }
+  .x8d11--xs {
+    width: 72.72727%; }
+  .x9d11--xs {
+    width: 81.81818%; }
+  .x10d11--xs {
+    width: 90.90909%; }
+  .x1d12--xs {
+    width: 8.33333%; }
+  .x5d12--xs {
+    width: 41.66667%; }
+  .x7d12--xs {
+    width: 58.33333%; }
+  .x11d12--xs {
+    width: 91.66667%; } }
